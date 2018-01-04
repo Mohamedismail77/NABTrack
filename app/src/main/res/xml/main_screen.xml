@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <SwitchPreference
+        android:defaultValue="false"
+        android:key="status"
+        android:summaryOff="Service stopped"
+        android:summaryOn="Service running"
+        android:switchTextOff="Service off"
+        android:switchTextOn="Service on"
+        android:title="Service Statues" />
+    <EditTextPreference
+        android:key="id"
+        android:title="Device ID" />
+
+    <EditTextPreference
+        android:defaultValue="http://dev01.dev.sourcya.net:8082"
+        android:key="url"
+        android:summary="Set server url"
+        android:title="Server URL" />
+
+
+    <EditTextPreference
+        android:defaultValue="300"
+        android:key="interval"
+        android:numeric="integer"
+        android:summary="Time interval in second"
+        android:title="Request interval" />
+
+    <EditTextPreference
+        android:defaultValue="0"
+        android:key="distance"
+        android:numeric="integer"
+        android:summary="Moved distance"
+        android:title="Distance" />
+
+    <EditTextPreference
+        android:defaultValue="0"
+        android:key="angle"
+        android:numeric="integer"
+        android:summary="Angle"
+        android:title="Angle" />
+</PreferenceScreen>
