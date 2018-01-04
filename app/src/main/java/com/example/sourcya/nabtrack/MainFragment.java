@@ -7,7 +7,9 @@ import android.preference.PreferenceManager;
 import android.support.annotation.Nullable;
 
 /**
+ *
  * Created by m-ismail on 04/01/18.
+ * 
  */
 
 public class MainFragment extends PreferenceFragment implements SharedPreferences.OnSharedPreferenceChangeListener {
