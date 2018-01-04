@@ -1,8 +1,7 @@
 package com.example.sourcya.nabtrack;
 
 
-import android.animation.AnimatorInflater;
-import android.animation.AnimatorSet;
+
 import android.os.CountDownTimer;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -16,6 +15,7 @@ public class MainActivity extends AppCompatActivity {
 
         getFragmentManager().beginTransaction().add(R.id.container,new SplachFragment()).commit();
 
+        getSupportActionBar().hide();
 
         new CountDownTimer(6000,1000) {
             @Override
@@ -25,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onFinish() {
+                getSupportActionBar().show();
                 getFragmentManager().beginTransaction().replace(R.id.container,new MainFragment()).commit();
             }
         }.start();
